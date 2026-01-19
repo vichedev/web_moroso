@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: web-morosot
     ports:
-      - "8390:80"
+      - "8390:8080"
     networks:
       - webnet
     restart: always
