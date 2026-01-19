@@ -1,0 +1,15 @@
+services:
+  web-morosot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web-morosot
+    ports:
+      - "8390:80"
+    networks:
+      - webnet
+    restart: always
+
+networks:
+  webnet:
+    driver: bridge
